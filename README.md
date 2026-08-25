@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/new-love-plus-russian-translation-banner.jpg" alt="New Love Plus+ — русский перевод для Nintendo 3DS" width="100%">
+
 # New Love Plus+ для Nintendo 3DS — русский перевод
 
 **Неофициальный перевод игры New Love Plus+ на русский язык.**
