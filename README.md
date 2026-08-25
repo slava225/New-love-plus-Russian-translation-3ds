@@ -44,6 +44,17 @@
 
 Позже здесь появится информация о том, как сообщать об ошибках, предлагать исправления и помогать с тестированием.
 
+## Благодарности
+
+Огромная благодарность команде [LovePlusProject](https://github.com/LovePlusProject) и всем участникам связанных проектов:
+
+- [NLPPATCH](https://github.com/LovePlusProject/NLPPATCH) — за незавершённый английский перевод **New Love Plus+**, технические исследования, документацию и основу для дальнейшей работы с игрой;
+- [NLPPCTR](https://github.com/LovePlusProject/NLPPCTR) — за моды, текстуры, шаблоны и материалы для работы с графикой игры;
+- разработчикам инструментов [NLPUnpacker](https://github.com/LovePlusProject/NLPUnpacker), [NLPTextTool](https://github.com/LovePlusProject/NLPTextTool), [nlpp-tools](https://github.com/LovePlusProject/nlpp-tools), [Trb2xlsx](https://github.com/LovePlusProject/Trb2xlsx), [png2texi](https://github.com/LovePlusProject/png2texi), [nlpp-fmt](https://github.com/LovePlusProject/nlpp-fmt) и [NLPLineWrapper](https://github.com/Aikin-Ai/NLPLineWrapper);
+- всем переводчикам, программистам, художникам, тестировщикам и участникам сообщества, которые помогали исследовать игру и делились своими наработками.
+
+Полный список участников оригинального английского проекта можно посмотреть в [официальных благодарностях NLPPATCH](https://github.com/LovePlusProject/NLPPATCH/issues/1).
+
 ## Важная информация
 
 Это неофициальный фанатский проект. Репозиторий не предназначен для распространения образа игры или других защищённых авторским правом файлов. Для использования будущего патча потребуется собственная копия игры.
