@@ -1,0 +1,82 @@
+name: Ошибка перевода
+description: Неправильный, непереведённый или обрезанный текст и ошибка графики
+title: "[Перевод] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за помощь. Чем точнее указано место, тем быстрее получится найти и проверить строку.
+  - type: dropdown
+    id: version
+    attributes:
+      label: Версия перевода
+      options:
+        - v0.1.0-beta
+        - Другая или не знаю
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Где запущена игра
+      options:
+        - Nintendo 3DS с Luma3DS
+        - Эмулятор
+        - Другое
+    validations:
+      required: true
+  - type: dropdown
+    id: character
+    attributes:
+      label: Персонаж или раздел
+      options:
+        - Манака
+        - Ринко
+        - Нэнэ
+        - Системный текст или меню
+        - Другой персонаж
+        - Не знаю
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Где находится ошибка
+      description: Укажите экран, событие, главу, дату или пункт меню.
+      placeholder: Например, почта — ответ на сообщение после свидания
+    validations:
+      required: true
+  - type: textarea
+    id: current_text
+    attributes:
+      label: Текст в игре
+      description: Перепишите ошибочную фразу точно, если она читается.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_text
+    attributes:
+      label: Как лучше исправить
+      description: Предложение необязательно. Если знаете японский оригинал, добавьте его и поясните контекст.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Как снова открыть этот экран
+      description: Опишите действия по порядку и важные условия события.
+      placeholder: 1. Открыть почту...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Снимок экрана
+      description: Перетащите сюда изображение. Закройте личные данные, если они видны.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Проверка перед отправкой
+      options:
+        - label: Я проверил существующие Issues и не нашёл такую же ошибку.
+          required: true
+        - label: В приложенных файлах нет образа игры, ключей или личного сохранения.
+          required: true

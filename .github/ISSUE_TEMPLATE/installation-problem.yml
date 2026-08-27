@@ -1,0 +1,81 @@
+name: Проблема установки
+description: Перевод не применяется, игра не запускается или появляется ошибка
+title: "[Установка] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Сначала проверьте полную инструкцию в docs/INSTALLATION.md. Не прикладывайте образ игры или личное сохранение.
+  - type: dropdown
+    id: version
+    attributes:
+      label: Версия перевода
+      options:
+        - v0.1.0-beta
+        - Другая или не знаю
+    validations:
+      required: true
+  - type: input
+    id: console
+    attributes:
+      label: Консоль или эмулятор
+      placeholder: Например, New Nintendo 3DS XL
+    validations:
+      required: true
+  - type: input
+    id: luma
+    attributes:
+      label: Версия Luma3DS
+      description: Если не знаете, так и напишите.
+    validations:
+      required: true
+  - type: input
+    id: title_id
+    attributes:
+      label: Title ID игры
+      value: "00040000000F4E00"
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: Путь к установленным файлам
+      placeholder: SD:/luma/titles/00040000000F4E00
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: Что происходит
+      options:
+        - Игра запускается, но перевод не появился
+        - Чёрный экран или зависание
+        - Игра закрывается с ошибкой
+        - Не удаётся распаковать или скопировать архив
+        - Другая проблема
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Что вы сделали
+      description: Опишите установку и момент возникновения проблемы по шагам.
+      placeholder: 1. Распаковал архив...
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Дополнительные сведения и снимки
+      description: Добавьте точный текст ошибки и безопасные фотографии экрана или структуры папок.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Проверка перед отправкой
+      options:
+        - label: В Luma3DS включён параметр Enable game patching.
+          required: true
+        - label: Я проверил, что папка SD_ROOT не была скопирована целиком внутрь SD-карты.
+          required: true
+        - label: В приложенных файлах нет образа игры, ключей или личного сохранения.
+          required: true
