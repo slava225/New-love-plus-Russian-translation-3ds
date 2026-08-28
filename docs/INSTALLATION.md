@@ -1,6 +1,6 @@
 # Установка русского перевода
 
-Инструкция относится к тестовому релизу **v0.1.2-beta** для японской версии **New Love Plus+**.
+Инструкция относится к тестовому релизу **v0.1.3-beta** для японской версии **New Love Plus+**.
 
 ## Требования
 
@@ -14,7 +14,7 @@
 
 ## Чистая установка
 
-1. Скачайте `New_Love_Plus_RU_v0.1.2-beta_Luma3DS.rar` со страницы [релиза v0.1.2-beta](https://github.com/slava225/New-love-plus-Russian-translation-3ds/releases/tag/v0.1.2-beta).
+1. Скачайте `New_Love_Plus_RU_v0.1.3-beta_Luma3DS.rar` со страницы [релиза v0.1.3-beta](https://github.com/slava225/New-love-plus-Russian-translation-3ds/releases/tag/v0.1.3-beta).
 2. Распакуйте RAR на компьютере.
 3. Откройте полученную папку `SD_ROOT`.
 4. Скопируйте находящуюся внутри неё папку `luma` в **корень SD-карты** и согласитесь на объединение папок.
@@ -69,7 +69,7 @@ SD:/luma/titles/00040000000F4E00
 
 1. Временно переименуйте `SD:/luma/titles/00040000000F4E00` и убедитесь, что исходная игра запускается без мода.
 2. Если исходная игра работает, полностью удалите старую папку мода.
-3. Установите v0.1.2-beta в чистую папку и убедитесь, что рядом с `romfs` находятся `code.bin`, `code.ips` и `locale.txt`.
+3. Установите v0.1.3-beta в чистую папку и убедитесь, что рядом с `romfs` находятся `code.bin`, `code.ips` и `locale.txt`.
 4. Проверьте в FBI, что Title ID установленной CIA равен `00040000000F4E00`.
 5. Если ошибка повторяется, создайте [обращение об установке](https://github.com/slava225/New-love-plus-Russian-translation-3ds/issues/new?template=installation-problem.yml).
 
