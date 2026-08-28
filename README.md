@@ -6,9 +6,9 @@
 
 Неофициальная русская локализация японской версии **New Love Plus+**.
 
-**Текущая версия: v0.1.0-beta от 27 августа 2026 года**
+**Текущая версия: v0.1.1-beta от 28 августа 2026 года**
 
-[Скачать готовый RAR для Luma3DS](https://github.com/slava225/New-love-plus-Russian-translation-3ds/releases/download/v0.1.0-beta/New_Love_Plus_RU_v0.1.0-beta_Luma3DS.rar)
+[Скачать готовый RAR для Luma3DS](https://github.com/slava225/New-love-plus-Russian-translation-3ds/releases/download/v0.1.1-beta/New_Love_Plus_RU_v0.1.1-beta_Luma3DS.rar)
 
 </div>
 
@@ -21,6 +21,7 @@
 - обработан системный и интерфейсный текст;
 - переведена значительная часть графики меню, почты, профиля, заданий, часов и дат;
 - исправлены найденные проблемы компоновки, шрифтов и кнопок возврата;
+- убрана устаревшая полная подмена `code.bin`, которая могла вызывать чёрный экран на части установленных CIA; вместо неё используется небольшой `code.ips`;
 - подготовлен единый архив для установки через **Luma3DS LayeredFS**.
 
 ## Состояние перевода
@@ -42,8 +43,8 @@
 
 Релиз распространяется **без xdelta**: в RAR уже лежит готовая папка `SD_ROOT` со всем необходимым.
 
-1. Убедитесь, что у вас японская версия игры с Title ID `00040000000F4E00` и установлен Luma3DS.
-2. Скачайте RAR из раздела [Releases](https://github.com/slava225/New-love-plus-Russian-translation-3ds/releases/latest).
+1. Убедитесь, что у вас японская версия игры с Title ID `00040000000F4E00` и установлен Luma3DS. Регион консоли может быть европейским; поддерживаются картридж и чистая японская CIA.
+2. Скачайте RAR из раздела [Releases](https://github.com/slava225/New-love-plus-Russian-translation-3ds/releases/tag/v0.1.1-beta).
 3. Распакуйте архив и скопируйте **содержимое** папки `SD_ROOT` в корень SD-карты с объединением папок.
 4. В настройках Luma3DS включите `Enable game patching`.
 5. Запустите игру.

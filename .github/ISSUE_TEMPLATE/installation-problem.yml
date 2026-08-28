@@ -11,6 +11,7 @@ body:
     attributes:
       label: Версия перевода
       options:
+        - v0.1.1-beta
         - v0.1.0-beta
         - Другая или не знаю
     validations:
@@ -20,6 +21,28 @@ body:
     attributes:
       label: Консоль или эмулятор
       placeholder: Например, New Nintendo 3DS XL
+    validations:
+      required: true
+  - type: dropdown
+    id: console_region
+    attributes:
+      label: Регион консоли
+      options:
+        - EUR
+        - USA
+        - JPN
+        - Другой или не знаю
+    validations:
+      required: true
+  - type: dropdown
+    id: game_install
+    attributes:
+      label: Версия игры
+      options:
+        - Чистая японская CIA
+        - Оригинальный японский картридж
+        - Изменённая или region-free CIA
+        - Не знаю
     validations:
       required: true
   - type: input
