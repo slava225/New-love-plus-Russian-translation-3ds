@@ -4,13 +4,16 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
 
+    <queries>
+        <package android:name="com.YoStarJP.AzurLane" />
+    </queries>
+
     <application
         android:allowBackup="false"
         android:label="Azur Lane JP Downloader"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
-        <!-- Required by Shizuku to deliver its binder to this app. -->
         <provider
             android:name="rikka.shizuku.ShizukuProvider"
             android:authorities="${applicationId}.shizuku"
