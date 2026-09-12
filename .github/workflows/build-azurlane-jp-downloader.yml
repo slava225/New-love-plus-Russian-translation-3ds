@@ -34,16 +34,20 @@ jobs:
         working-directory: azurlane-jp-downloader-android
         run: python3 turbo_patch.py
 
+      - name: Apply fast scan and folder patch
+        working-directory: azurlane-jp-downloader-android
+        run: python3 scan_folder_patch.py
+
       - name: Build debug APK
         working-directory: azurlane-jp-downloader-android
         run: gradle --no-daemon assembleDebug
 
       - name: Rename APK
-        run: cp azurlane-jp-downloader-android/app/build/outputs/apk/debug/app-debug.apk AzurLane-JP-Downloader-v0.3.1-Turbo.apk
+        run: cp azurlane-jp-downloader-android/app/build/outputs/apk/debug/app-debug.apk AzurLane-JP-Downloader-v0.3.2-Turbo.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: AzurLane-JP-Downloader-v0.3.1-Turbo
-          path: AzurLane-JP-Downloader-v0.3.1-Turbo.apk
+          name: AzurLane-JP-Downloader-v0.3.2-Turbo
+          path: AzurLane-JP-Downloader-v0.3.2-Turbo.apk
           if-no-files-found: error
