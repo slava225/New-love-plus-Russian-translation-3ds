@@ -11,6 +11,18 @@ def repl(old: str, new: str, label: str):
         raise SystemExit(f"patch {label}: expected 1 match, got {count}")
     s = s.replace(old, new, 1)
 
+repl(
+    'toolbar.setSubtitle("Resource Downloader • v0.3.1 Turbo");',
+    'toolbar.setSubtitle("Resource Downloader • v0.3.2 Turbo");',
+    'toolbar version',
+)
+
+repl(
+    'c.setRequestProperty("User-Agent", "AzurLaneJPDownloader-Android/0.3.1");',
+    'c.setRequestProperty("User-Agent", "AzurLaneJPDownloader-Android/0.3.2");',
+    'user agent version',
+)
+
 # Keep diagnostics useful without filling the log with the same line on every resume.
 repl(
     '    private volatile boolean downloadRunning = false;\n',
