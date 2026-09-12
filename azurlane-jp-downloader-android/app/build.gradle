@@ -10,12 +10,13 @@ android {
         applicationId 'ru.slava.azljpdownloader'
         minSdk 26
         targetSdk 35
-        versionCode 4
-        versionName '0.2.0'
+        versionCode 5
+        versionName '0.3.0'
     }
 }
 
 dependencies {
+    implementation 'com.google.android.material:material:1.14.0'
     implementation 'dev.rikka.shizuku:api:13.1.5'
     implementation 'dev.rikka.shizuku:provider:13.1.5'
 }
