@@ -32,11 +32,11 @@ jobs:
         run: gradle --no-daemon assembleDebug
 
       - name: Rename APK
-        run: cp azurlane-jp-downloader-android/app/build/outputs/apk/debug/app-debug.apk AzurLane-JP-Downloader-v0.1.0.apk
+        run: cp azurlane-jp-downloader-android/app/build/outputs/apk/debug/app-debug.apk AzurLane-JP-Downloader-v0.1.1.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: AzurLane-JP-Downloader-v0.1.0
-          path: AzurLane-JP-Downloader-v0.1.0.apk
+          name: AzurLane-JP-Downloader-v0.1.1
+          path: AzurLane-JP-Downloader-v0.1.1.apk
           if-no-files-found: error
